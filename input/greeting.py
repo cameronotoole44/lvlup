@@ -28,10 +28,7 @@ for attempt in range(max_attempts):
         print("Too many invalid attempts. Exiting")
         exit(1)
 
-# random greeting    
 greetings = ["Hello, {}!", "Yo {} wassup?", "Beannachtaí, {}"]
 selected_greeting = random.choice(greetings)
-# formatted_greeting = f"{selected_greeting.format(user_name)}"
-# for better readablity
 formatted_greeting = selected_greeting.format(user_name)
 print(formatted_greeting)
